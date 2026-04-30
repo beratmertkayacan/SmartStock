@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+*.egg-info/
+
+# ML modelleri
+backend/app/ml/models/
+
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# IDE
+.vscode/settings.json
+*.log
