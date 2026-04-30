@@ -1,0 +1,163 @@
+<svg viewBox="0 0 780 520" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <title>SmartStock System Architecture</title>
+
+  <!-- Background -->
+  <rect width="780" height="520" fill="#f8f9fa" rx="12"/>
+
+  <!-- Title -->
+  <text x="390" y="36" text-anchor="middle" font-size="17" font-weight="700" fill="#111827">SmartStock — Sistem Mimarisi</text>
+  <text x="390" y="54" text-anchor="middle" font-size="11" fill="#6b7280">Full-Stack Inventory Management · Ridge Regression · EOQ Optimization</text>
+
+  <!-- LAYER LABELS -->
+  <text x="22" y="106" font-size="9" font-weight="600" fill="#9ca3af" letter-spacing="1.2">FRONTEND</text>
+  <text x="22" y="226" font-size="9" font-weight="600" fill="#9ca3af" letter-spacing="1.2">BACKEND API</text>
+  <text x="22" y="346" font-size="9" font-weight="600" fill="#9ca3af" letter-spacing="1.2">ML ENGINE</text>
+  <text x="22" y="446" font-size="9" font-weight="600" fill="#9ca3af" letter-spacing="1.2">DATABASE</text>
+
+  <!-- divider lines -->
+  <line x1="22" y1="115" x2="758" y2="115" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="22" y1="235" x2="758" y2="235" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="22" y1="355" x2="758" y2="355" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="22" y1="455" x2="758" y2="455" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- FRONTEND LAYER -->
+  <rect x="55" y="122" width="118" height="96" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="114" y="148" text-anchor="middle" font-size="18">📊</text>
+  <text x="114" y="166" text-anchor="middle" font-size="11" font-weight="600" fill="#1d4ed8">Dashboard</text>
+  <text x="114" y="181" text-anchor="middle" font-size="9" fill="#3b82f6">KPI Kartları</text>
+  <text x="114" y="194" text-anchor="middle" font-size="9" fill="#3b82f6">30 Gün Grafik</text>
+  <text x="114" y="207" text-anchor="middle" font-size="9" fill="#3b82f6">Kritik Stok</text>
+
+  <rect x="193" y="122" width="118" height="96" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="252" y="148" text-anchor="middle" font-size="18">📦</text>
+  <text x="252" y="166" text-anchor="middle" font-size="11" font-weight="600" fill="#15803d">Ürünler</text>
+  <text x="252" y="181" text-anchor="middle" font-size="9" fill="#16a34a">CRUD İşlemleri</text>
+  <text x="252" y="194" text-anchor="middle" font-size="9" fill="#16a34a">Stok Seviyeleri</text>
+  <text x="252" y="207" text-anchor="middle" font-size="9" fill="#16a34a">Kategori Filtre</text>
+
+  <rect x="331" y="122" width="118" height="96" rx="8" fill="#fdf4ff" stroke="#e9d5ff" stroke-width="1.5"/>
+  <text x="390" y="148" text-anchor="middle" font-size="18">🔄</text>
+  <text x="390" y="166" text-anchor="middle" font-size="11" font-weight="600" fill="#7e22ce">Hareketler</text>
+  <text x="390" y="181" text-anchor="middle" font-size="9" fill="#9333ea">Giriş / Çıkış</text>
+  <text x="390" y="194" text-anchor="middle" font-size="9" fill="#9333ea">Tedarikçi / Müşteri</text>
+  <text x="390" y="207" text-anchor="middle" font-size="9" fill="#9333ea">Fatura Takibi</text>
+
+  <rect x="469" y="122" width="118" height="96" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="528" y="148" text-anchor="middle" font-size="18">📈</text>
+  <text x="528" y="166" text-anchor="middle" font-size="11" font-weight="600" fill="#c2410c">Talep Tahmini</text>
+  <text x="528" y="181" text-anchor="middle" font-size="9" fill="#ea580c">Ridge Regression</text>
+  <text x="528" y="194" text-anchor="middle" font-size="9" fill="#ea580c">30/60/90 Gün</text>
+  <text x="528" y="207" text-anchor="middle" font-size="9" fill="#ea580c">Güven Bandı</text>
+
+  <rect x="607" y="122" width="118" height="96" rx="8" fill="#fefce8" stroke="#fde68a" stroke-width="1.5"/>
+  <text x="666" y="148" text-anchor="middle" font-size="18">🧮</text>
+  <text x="666" y="166" text-anchor="middle" font-size="11" font-weight="600" fill="#a16207">EOQ &amp; Raporlar</text>
+  <text x="666" y="181" text-anchor="middle" font-size="9" fill="#ca8a04">Optimal Sipariş</text>
+  <text x="666" y="194" text-anchor="middle" font-size="9" fill="#ca8a04">ABC Analizi</text>
+  <text x="666" y="207" text-anchor="middle" font-size="9" fill="#ca8a04">Stok Raporları</text>
+
+  <!-- Tech badges -->
+  <rect x="55" y="222" width="80" height="18" rx="4" fill="#dbeafe"/>
+  <text x="95" y="234" text-anchor="middle" font-size="9" font-weight="600" fill="#1d4ed8">React 18 + Vite</text>
+  <rect x="141" y="222" width="70" height="18" rx="4" fill="#dcfce7"/>
+  <text x="176" y="234" text-anchor="middle" font-size="9" font-weight="600" fill="#15803d">Recharts</text>
+  <rect x="217" y="222" width="80" height="18" rx="4" fill="#ede9fe"/>
+  <text x="257" y="234" text-anchor="middle" font-size="9" font-weight="600" fill="#7c3aed">React Router</text>
+  <rect x="303" y="222" width="70" height="18" rx="4" fill="#fce7f3"/>
+  <text x="338" y="234" text-anchor="middle" font-size="9" font-weight="600" fill="#be185d">Tailwind CSS</text>
+
+  <!-- HTTP arrows -->
+  <line x1="114" y1="218" x2="200" y2="248" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="252" y1="218" x2="310" y2="248" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="390" y1="218" x2="390" y2="248" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="528" y1="218" x2="470" y2="248" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="666" y1="218" x2="580" y2="248" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="390" y="245" text-anchor="middle" font-size="9" fill="#9ca3af">REST API (HTTP/JSON · Axios)</text>
+
+  <!-- BACKEND LAYER -->
+  <rect x="55" y="256" width="670" height="82" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <rect x="72" y="268" width="100" height="58" rx="6" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="122" y="286" text-anchor="middle" font-size="10" font-weight="600" fill="#15803d">/urunler</text>
+  <text x="122" y="300" text-anchor="middle" font-size="9" fill="#16a34a">GET · POST</text>
+  <text x="122" y="313" text-anchor="middle" font-size="9" fill="#16a34a">PUT · DELETE</text>
+
+  <rect x="184" y="268" width="100" height="58" rx="6" fill="#fdf4ff" stroke="#e9d5ff"/>
+  <text x="234" y="286" text-anchor="middle" font-size="10" font-weight="600" fill="#7e22ce">/hareketler</text>
+  <text x="234" y="300" text-anchor="middle" font-size="9" fill="#9333ea">Stok Giriş/Çıkış</text>
+  <text x="234" y="313" text-anchor="middle" font-size="9" fill="#9333ea">Stok Güncelle</text>
+
+  <rect x="296" y="268" width="100" height="58" rx="6" fill="#fff7ed" stroke="#fed7aa"/>
+  <text x="346" y="286" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">/analitik</text>
+  <text x="346" y="300" text-anchor="middle" font-size="9" fill="#ea580c">Dashboard</text>
+  <text x="346" y="313" text-anchor="middle" font-size="9" fill="#ea580c">Geçmiş Satış</text>
+
+  <rect x="408" y="268" width="100" height="58" rx="6" fill="#fefce8" stroke="#fde68a"/>
+  <text x="458" y="286" text-anchor="middle" font-size="10" font-weight="600" fill="#a16207">/tahmin + /eoq</text>
+  <text x="458" y="300" text-anchor="middle" font-size="9" fill="#ca8a04">ML Tahmin</text>
+  <text x="458" y="313" text-anchor="middle" font-size="9" fill="#ca8a04">EOQ Hesap</text>
+
+  <rect x="520" y="268" width="100" height="58" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="570" y="286" text-anchor="middle" font-size="10" font-weight="600" fill="#1d4ed8">/auth</text>
+  <text x="570" y="300" text-anchor="middle" font-size="9" fill="#3b82f6">JWT Token</text>
+  <text x="570" y="313" text-anchor="middle" font-size="9" fill="#3b82f6">Login / Logout</text>
+
+  <text x="660" y="291" text-anchor="middle" font-size="9" font-weight="700" fill="#6b7280">FastAPI</text>
+  <text x="660" y="306" text-anchor="middle" font-size="8" fill="#9ca3af">+ CORS</text>
+
+  <!-- Backend → ML arrows -->
+  <line x1="458" y1="338" x2="458" y2="358" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="346" y1="338" x2="390" y2="358" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- ML ENGINE LAYER -->
+  <rect x="55" y="364" width="320" height="76" rx="8" fill="#ffffff" stroke="#fed7aa" stroke-width="1.5"/>
+
+  <rect x="68" y="376" width="132" height="52" rx="6" fill="#fff7ed" stroke="#fed7aa"/>
+  <text x="134" y="397" text-anchor="middle" font-size="18">🤖</text>
+  <text x="134" y="413" text-anchor="middle" font-size="10" font-weight="600" fill="#c2410c">Ridge Regression</text>
+  <text x="134" y="426" text-anchor="middle" font-size="9" fill="#ea580c">scikit-learn · joblib</text>
+
+  <rect x="212" y="376" width="152" height="52" rx="6" fill="#fefce8" stroke="#fde68a"/>
+  <text x="288" y="397" text-anchor="middle" font-size="18">📐</text>
+  <text x="288" y="413" text-anchor="middle" font-size="10" font-weight="600" fill="#a16207">EOQ Modeli</text>
+  <text x="288" y="426" text-anchor="middle" font-size="9" fill="#ca8a04">Wilson Formülü</text>
+
+  <text x="390" y="382" text-anchor="start" font-size="9" font-weight="600" fill="#6b7280">Feature Engineering</text>
+  <text x="390" y="396" text-anchor="start" font-size="9" fill="#9ca3af">• Ay sin/cos (mevsimsellik)</text>
+  <text x="390" y="410" text-anchor="start" font-size="9" fill="#9ca3af">• 7 / 30 gün hareketli ort.</text>
+  <text x="390" y="424" text-anchor="start" font-size="9" fill="#9ca3af">• Haftanın günü · Yılın günü</text>
+
+  <!-- ML → DB arrow -->
+  <line x1="200" y1="440" x2="270" y2="460" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- DATABASE LAYER -->
+  <rect x="55" y="464" width="670" height="44" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <text x="130" y="482" text-anchor="middle" font-size="16">🐘</text>
+  <text x="165" y="479" text-anchor="start" font-size="11" font-weight="600" fill="#1e293b">PostgreSQL</text>
+  <text x="165" y="494" text-anchor="start" font-size="9" fill="#6b7280">SQLAlchemy ORM</text>
+
+  <rect x="280" y="468" width="72" height="32" rx="5" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="316" y="482" text-anchor="middle" font-size="9" font-weight="600" fill="#334155">urunler</text>
+  <text x="316" y="494" text-anchor="middle" font-size="8" fill="#94a3b8">ürün kataloğu</text>
+
+  <rect x="360" y="468" width="100" height="32" rx="5" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="410" y="482" text-anchor="middle" font-size="9" font-weight="600" fill="#334155">stok_hareketleri</text>
+  <text x="410" y="494" text-anchor="middle" font-size="8" fill="#94a3b8">145K+ kayıt</text>
+
+  <rect x="468" y="468" width="80" height="32" rx="5" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="508" y="482" text-anchor="middle" font-size="9" font-weight="600" fill="#334155">tedarikci</text>
+  <text x="508" y="494" text-anchor="middle" font-size="8" fill="#94a3b8">supplier</text>
+
+  <rect x="556" y="468" width="72" height="32" rx="5" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="592" y="482" text-anchor="middle" font-size="9" font-weight="600" fill="#334155">siparis</text>
+  <text x="592" y="494" text-anchor="middle" font-size="8" fill="#94a3b8">orders</text>
+
+  <!-- Legend -->
+  <line x1="638" y1="375" x2="650" y2="375" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="654" y="379" font-size="8" fill="#6b7280">HTTP</text>
+  <line x1="638" y1="390" x2="650" y2="390" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="654" y="394" font-size="8" fill="#6b7280">ML Çağrı</text>
+  <line x1="638" y1="405" x2="650" y2="405" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="654" y="409" font-size="8" fill="#6b7280">DB Sorgu</text>
+</svg>
