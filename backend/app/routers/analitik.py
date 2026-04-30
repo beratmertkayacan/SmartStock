@@ -216,10 +216,11 @@ def gecmis_satislar(urun_id: int, gun: int = 365, db: Session = Depends(get_db))
             referans = date.today()
         baslangic = referans - timedelta(days=gun)
 
+        # tarih kolonu DB'de TEXT olarak saklandığından str() ile karşılaştırıyoruz
         hareketler = db.query(StokHareketi).filter(
             StokHareketi.urun_id      == urun_id,
             StokHareketi.hareket_tipi == "cikis",
-            StokHareketi.tarih        >= baslangic
+            StokHareketi.tarih        >= str(baslangic)
         ).order_by(StokHareketi.tarih).all()
 
         # Aynı tarihteki hareketleri topla (günlük aggregate)

@@ -93,8 +93,12 @@ export default function Tahmin() {
         setAramaAcik(false)
     }
 
+    // Grafik için gecmis verisini son aralik güne kırpıyoruz (365 gün veri var ama
+    // grafikte sadece tahminle aynı dönemi gösteriyoruz — daha okunabilir)
+    const grafikGecmis = gecmis.slice(-aralik)
+
     const grafikVerisi = [
-        ...gecmis.map(g => ({ tarih: g.tarih.slice(5), gercek: parseFloat(g.miktar.toFixed(1)) })),
+        ...grafikGecmis.map(g => ({ tarih: g.tarih.slice(5), gercek: parseFloat(g.miktar.toFixed(1)) })),
         ...(tahmin?.gunluk_tahminler || []).map((t, i) => {
             const d = new Date()
             d.setDate(d.getDate() + i + 1)
@@ -306,7 +310,7 @@ export default function Tahmin() {
                             <YAxis tick={{ fontSize: 11 }} />
                             <Tooltip contentStyle={{ borderRadius: "12px", border: "none", boxShadow: "0 4px 20px rgba(0,0,0,0.1)" }} />
                             <Legend />
-                            <ReferenceLine x={grafikVerisi[gecmis.length - 1]?.tarih} stroke="#94a3b8" strokeDasharray="4 4" label={{ value: "Bugün", fill: "#94a3b8", fontSize: 11 }} />
+                            <ReferenceLine x={grafikGecmis[grafikGecmis.length - 1]?.tarih} stroke="#94a3b8" strokeDasharray="4 4" label={{ value: "Bugün", fill: "#94a3b8", fontSize: 11 }} />
                             <Line type="monotone" dataKey="gercek" name="Gerçek Satış" stroke="#3b82f6" strokeWidth={2} dot={false} />
                             <Line type="monotone" dataKey="tahmin" name="Tahmin" stroke="#8b5cf6" strokeWidth={2} strokeDasharray="5 5" dot={false} />
                             <Line type="monotone" dataKey="ustBand" name="Üst Band" stroke="#c4b5fd" strokeWidth={1} strokeDasharray="3 3" dot={false} />
